@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: suivi-candidatures
+  datasource:
+    url: jdbc:postgresql://localhost:5432/candidatures
+    username: candidatures
+    password: candidatures
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  flyway:
+    enabled: true
